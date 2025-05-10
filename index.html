@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chenna Sai Karthik - Portfolio</title>
+    <!--=============== FLATICON ===============-->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <nav class="nav container nav_container">
+            <div class="logo">
+                <a href="#home" class="nav_logo">
+                    <img src="Assets/logo-2.png" alt="" class="nav_logo">
+                </a>
+            </div>
+
+            <div class="nav_menu" id="nav_menu">
+                <ul class="nav_list mob_nav_link">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active_link" onclick="close_navlinks()">Home</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link" onclick="close_navlinks()">About</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#project" class="nav_link" onclick="close_navlinks()">Projects</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#contact" class="nav_link" onclick="close_navlinks()">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="toggle">
+                <i class='bx bx-menu' id="toggle_btn"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main" id="main">
+        <!--=============== HOME / HERO  ===============-->
+        <section class="home section_lg" id="home">
+            <div class="home_container container flex"> <!--grid-->
+                <div class="home_content">
+                    <span class="subtitle"> Hey!, I'm</span>
+                    <h1 class="title">Chenna Sai Karthik</h1>
+                    <h3 class="title_desc">An Engineering Student</h3>
+                    <a href="Assets/Resume - Chenna Sai Karthik.pdf" target="_blank" class="btn">Download Resume</a>
+                </div>
+
+                <img src="assets/hero_img_1.jpg" alt="" class="home_img">
+            </div>
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="about container section" id="about">
+            <h3 class="section_title"><span>About</span> Me</h3>
+
+            <div class="about_content">
+                <p>I'm <span>Chenna Sai Karthik</span> a final year B.Tech student at Sri Indu College of Engineering and
+                    Technology, Information Technology Department.</p>
+
+                <p>I am a dynamic and motivated programmer with a passion for technology and keen intrest in software
+                    development. My journey in the world of programming has equipped me with a solid foundation in HTML,
+                    CSS, JavaScript, Java and Python programming, allowing me to translate innovative ideas into
+                    practical,
+                    user-friendly solutions.</p>
+
+                <p>Detail-oriented and ambitious engineering student with a passion for obtaining accurate results and
+                    working on a team. Seeking an entry-level position in the software industry to pursue a career as a
+                    Software Engineer and improve my skill set.</p>
+
+            </div>
+
+            <!-- =========== EDUCATION ================== -->
+            <h3 class="section_title">Education Me</h3>
+            <div class="education_container">
+                <div class="edu_card">
+                    <i class='bx bxs-graduation'></i>
+                    <h4 class="edu_title">Bachelor of Technology in Information Technology</h4>
+                    <p class="edu_desc">Sri Indu College of Engineering and Technology</p>
+                    <span class="edu_year">2022 - 2025</span>
+                </div>
+
+                <div class="edu_card">
+                    <i class='bx bxs-institution'></i>
+                    <h4 class="edu_title">Diploma in Electrical and Electronic Engineering</h4>
+                    <p class="edu_desc">State Board of Technical Education and Training</p>
+                    <span class="edu_year">2019 - 2022</span>
+                </div>
+
+                <div class="edu_card">
+                    <i class='bx bxs-school'></i>
+                    <h4 class="edu_title">Secondary School</h4>
+                    <p class="edu_desc">Sai Krishnaveni High School</p>
+                    <span class="edu_year">2018 - 2019</span>
+                </div>
+            </div>
+
+            <!-- =========== SKILLS ================== -->
+            <h3 class="section_title">Skills</h3>
+            <div class="skills_container">
+                <div class="skill_card">
+                    <i class='bx bxl-java'></i>
+                    <p>Java</p>
+                </div>
+                <div class="skill_card">
+                    <i class='bx bxl-python'></i>
+                    <p>Python</p>
+                </div>
+                <div class="skill_card">
+                    <i class='bx bxl-postgresql'></i>
+                    <p>MySQL</p>
+                </div>
+                <div class="skill_card">
+                    <i class='bx bxl-html5'></i>
+                    <p>HTML</p>
+                </div>
+                <div class="skill_card">
+                    <i class='bx bxl-css3'></i>
+                    <p>CSS</p>
+                </div>
+                <div class="skill_card">
+                    <i class='bx bxl-javascript'></i>
+                    <p>JavaScript</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!--=============== PROJECT ===============-->
+        <section class="project container section" id="project">
+            <h3 class="section_title">Projects</h3>
+            <div class="project_wrapper">
+                <div class="outer">
+                    <h4>Developed a ML Model for Dynamic Price Prediction</h4>
+                    <p>This model help retailers evaluate the potential impact of sales and estimate the right price for
+                        each
+                        product
+                        they want to sell it in a certain period of time.</p>
+
+                    <div class="cover project_main" style="background-image: url('Assets/project-ml.jpeg');">
+                        <b>Developed a ML Model for Dynamic Price Prediction</b>
+                    </div>
+                    <a href="#about">View More</a>
+                </div>
+
+                <div class="outer">
+                    <h4>Temperature Converter</h4>
+                    <p>Temperature Converter is a straightforward web application that allows users to convert
+                        temperatures between
+                        Celsius and Fahrenheit. With an easy-to-use interface, it quickly and accurately converts
+                        temperatures, making
+                        it a convenient tool for everyday use.</p>
+
+                    <div class="cover project_main" style="background-image: url('Assets/temperature.png');">
+                        <b>Temperature Converter</b>
+                    </div>
+                    <a href="https://karthikchenna.github.io/Temperature-Converter/" target="_blank">View More</a>
+                </div>
+
+                <div class="outer">
+                    <h4>Weather App</h4>
+                    <p>Weather App is a user-friendly web application that provides real-time weather updates for any
+                        location. It
+                        allows users to check current temperatures, forecasts, and weather conditions, helping them stay
+                        informed and
+                        plan their day accordingly.</p>
+
+                    <div class="cover project_main" style="background-image: url('Assets/Weather\ App.jpg');">
+                        <b>Weather App</b>
+                    </div>
+                    <a href="#about">View More</a>
+                </div>
+
+                <div class="outer">
+                    <h4>Expense Tracker</h4>
+                    <p>Expense Tracker is a simple web application that helps users manage their finances by tracking
+                        income and
+                        expenses. It allows users to easily add, categorize, and view their transactions, providing a
+                        clear overview
+                        of their financial habits</p>
+
+                    <div class="cover project_main" style="background-image: url('Assets/Expense\ Tracker.jpg');">
+                        <b>Expense Tracker</b>
+                    </div>
+                    <a href="https://karthikchenna.github.io/Expense-Tracker/" target="_blank">View More</a>
+                </div>
+
+                <div class="outer">
+                    <h4>Analyzing Product usage based on Twitter</h4>
+                    <p>This project uses data mining techniques to analyze Twitter comments about various products. By
+                        extracting user feedback, it helps identify product strengths and weaknesses, offering valuable
+                        insights for
+                        future product improvements.</p>
+
+                    <div class="cover project_main"
+                        style="background-image: url('Assets/Analyzing\ Product\ Usage.jpg');">
+                        <b>Analyzing Product usage based on Twitter</b>
+                    </div>
+                    <a href="#about">View More</a>
+                </div>
+
+                <div class="outer">
+                    <h4>Social Media and Misleading Information in a Democracy</h4>
+                    <p>This project presents a mechanism to incentivize social media platforms to filter misinformation
+                        efficiently
+                        using game theory, ensuring platforms act in users' best interests while balancing their
+                        strategic goals.</p>
+
+                    <div class="cover project_main"
+                        style="background-image: url('Assets/Social\ Media\ Mis-leading.jpg');">
+                        <b>Social Media and Misleading Information in a Democracy</b>
+                    </div>
+                    <a href="#about">View More</a>
+                </div>
+
+                <div class="outer">
+                    <h4>Developed a Website for a Wedding Store</h4>
+                    <p>Developed a website for 'Sri Balaji Computers,' a wedding store, featuring multiple webpages to
+                        showcase
+                        their products and services. The site provides an easy-to-navigate platform for customers to
+                        explore
+                        wedding-related offerings and make informed decisions
+                    </p>
+
+                    <div class="cover project_main" style="background-image: url('Assets/Balaji.jpg');">
+                        <b>Developed a Website for a Wedding Store</b>
+                    </div>
+                    <a href="https://karthikchenna.github.io/balaji_computers_jpt/" target="_blank">View More</a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--=============== Contact ===============-->
+        <section class="contact container section" id="contact">
+            <h3 class="section_title">Contact Me</h3>
+            <div class="contact_wrapper">
+                <div class="contact_content">
+                    <div class="contact_item">
+                        <i class='bx bxs-envelope'></i>
+                        <!-- <  p>karthikchenna789@gmail.com</p> -->
+                        <a href="mailto:karthikchenna789@gmail.com">karthikchenna789@gmail.com</a>
+                    </div>
+                    <div class="contact_item">
+                        <i class='bx bxs-phone-call'></i>
+                        <!-- <p>+91 779988 2917</p> -->
+                        <a href="tel:7799882917">+91 779988 2917</a>
+                    </div>
+                    <div class="contact_item">
+                        <i class='bx bxl-linkedin-square'></i>
+                        <!-- <p>linkedin.com/in/chenna-sai-karthik</p> -->
+                        <a href="https://www.linkedin.com/in/chenna-sai-karthik/" target="_blank">linkedin.com/in/chenna-sai-karthik</a>
+                    </div>
+                    <div class="contact_item">
+                        <i class='bx bxl-github'></i>
+                        <!-- <p>github.com/karthikchenna</p> -->
+                        <a href="https://github.com/karthikchenna" target="_blank">github.com/karthikchenna</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer ">
+            <div class="footer_container container">
+                <div class="footer__social-links flex">
+                    <a href="mailto:karthikchenna789@gmail.com" target="_blank"> <i class='bx bxl-gmail'></i> </a>
+                    <a href="https://github.com/karthikchenna" target="_blank"> <i class='bx bxl-github'></i> </a>
+                    <a href="https://www.linkedin.com/in/chenna-sai-karthik" target="_blank"> <i
+                            class='bx bxl-linkedin'></i> </a>
+                    <a href="https://www.facebook.com/profile.php?id=100007187011271" target="_blank"> <i
+                            class='bx bxl-facebook'></i> </a>
+                    <a href="https://www.instagram.com/karthik._padmashali/" target="_blank"> <i
+                            class='bx bxl-instagram'></i></a>
+                </div>
+
+                <div class="copyright">
+                    <p>Copyright ©2025 All rights reserved | Karthik</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+</html>
